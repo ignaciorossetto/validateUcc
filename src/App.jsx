@@ -47,7 +47,7 @@ function App() {
     }
     if(validateClick()){
       const obj = personsArray.find((p)=> p?.dni == dniInput)
-      return Swal.fire({
+      Swal.fire({
         icon: 'success',
         html: '<div> CERTIFICADO VÁLIDO</div>' + 
         `<strong>Nº de Expediente:<strong/> <span>${obj?.exp}</span> <br>`+
@@ -59,6 +59,10 @@ function App() {
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'Aceptar',
       })
+      setctrlNumber('')
+      setdniInput('')
+      handleClick()
+      return
     }
     Swal.fire({
       icon: 'error',

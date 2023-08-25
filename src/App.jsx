@@ -4,7 +4,7 @@ import './App.css'
 import Swal from 'sweetalert2'
 
 const numberArray = [1578, 4584, 8964, 1254, 3458, 8648, 2154, 8947, 7485, 7724]
-const dniArray = ['37135160']
+const dniArray = ['37135160', '34839260']
 const newNumber = () => {
   const mult = Math.floor(Math.random()*(numberArray.length))
   return mult
@@ -15,7 +15,12 @@ const personsArray = [
     name: 'ROSSETTO IGNACIO',
     dni: '37135160',
     exp: '19072023-057'
-  }
+  },
+  {
+    name: 'GARCÍA DÍAZ MATEO',
+    dni: '34839260',
+    exp: '19072023-063'
+  },
 ]
 
 

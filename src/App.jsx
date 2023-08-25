@@ -29,12 +29,10 @@ function App() {
   }
 
   const validateClick = () => {
-    const aa = dniArray.includes(dniInput)
-    return aa
+    return dniArray.includes(dniInput)
   }
 
   const handleBtnClick = () => {
-    console.log(ctrlNumber, number)
     if(ctrlNumber != number) {
       return Swal.fire({
         text: 'NÚMERO DE CONTROL incorrecto.',
@@ -43,19 +41,18 @@ function App() {
       })
     }
     if(validateClick()){
-      const obj = personsArray.find((p)=> p.dni == dniInput)
+      const obj = personsArray.find((p)=> p?.dni == dniInput)
       return Swal.fire({
         icon: 'success',
         html: '<div> CERTIFICADO VÁLIDO</div>' + 
-        `<strong>Nº de Expediente:<strong/> <span>${obj.exp}</span> <br>`+
+        `<strong>Nº de Expediente:<strong/> <span>${obj?.exp}</span> <br>`+
         '<strong>Tipo:<strong/> <span>Alumno Regular - Carrera / Curso</span> <br>'+
-        `<strong>Nombre:<strong/> <span>${obj.name}</span> <br>`+
-        `<strong>Documento:<strong/> <span>DN ${obj.dni}</span>`
+        `<strong>Nombre:<strong/> <span>${obj?.name}</span> <br>`+
+        `<strong>Documento:<strong/> <span>DN ${obj?.dni}</span>`
         ,
     
         confirmButtonColor: '#3085d6',
         confirmButtonText: 'Aceptar',
-        buttonsStyling: {fontSize: '20px'}
       })
     }
     Swal.fire({

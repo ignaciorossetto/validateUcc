@@ -4,7 +4,7 @@ import './App.css'
 import Swal from 'sweetalert2'
 
 const numberArray = [1578, 4584, 8964, 1254, 3458, 8648, 2154, 8947, 7485, 7724]
-const dniArray = ['37135160', '34839260']
+const dniArray = ['37135160', '34839260', '29201810', '35864338']
 const newNumber = () => {
   const mult = Math.floor(Math.random()*(numberArray.length))
   return mult
@@ -20,6 +20,16 @@ const personsArray = [
     name: 'GARCÍA DÍAZ MATEO',
     dni: '34839260',
     exp: '19072023-063'
+  },
+  {
+    name: 'TAGLE CESAR IGNACIO',
+    dni: '29201810',
+    exp: '19072023-077'
+  },
+  {
+    name: 'GEA ALUHE MANUEL',
+    dni: '35864338',
+    exp: '19072023-154'
   },
 ]
 
@@ -75,9 +85,9 @@ function App() {
   return (
     <main className='main'>
       <div className='header'>
-        <div className='header_img_container'>
+        <a href='https://ucc.edu.ar/' className='header_img_container'>
           <img className='header_img' src="/logo.svg" alt="logo" />
-        </div>
+        </a>
         <h3 className='header_title'>Validación UCC</h3>
       </div>
       <div></div>

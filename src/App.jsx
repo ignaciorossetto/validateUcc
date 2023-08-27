@@ -14,22 +14,27 @@ const personsArray = [
   {
     name: 'ROSSETTO IGNACIO',
     dni: '37135160',
-    exp: '19072023-057'
+    exp: '07082023-057'
   },
   {
     name: 'GARCÍA DÍAZ MATEO',
     dni: '34839260',
-    exp: '19072023-063'
+    exp: '10082023-063'
   },
   {
     name: 'TAGLE CESAR IGNACIO',
     dni: '29201810',
-    exp: '19072023-077'
+    exp: '16082023-077'
   },
   {
     name: 'GEA ALUHE MANUEL',
     dni: '35864338',
-    exp: '19072023-154'
+    exp: '14082023-154'
+  },
+  {
+    name: 'HERIBERTO AGUSTIN MARTÍNEZ ',
+    dni: '35612856',
+    exp: '09082023-048'
   },
 ]
 

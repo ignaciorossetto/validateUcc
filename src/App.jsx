@@ -14,7 +14,7 @@ const personsArray = [
   {
     name: 'ROSSETTO IGNACIO',
     dni: '37135160',
-    exp: '07082023-057'
+    exp: '07092023-057'
   },
   {
     name: 'GARCÍA DÍAZ MATEO',
